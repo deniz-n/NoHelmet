@@ -1,12 +1,12 @@
 Citizen.CreateThread( function()
     while true do
         local dr = 1000
-        local playerPed = PlayerPedId()
-        local playerVeh = GetVehiclePedIsUsing(playerPed)
+        local Ped = PlayerPedId()
+        local Vehicle = GetVehiclePedIsUsing(Ped)
 
-        if gPlayerVeh ~= 0 then
+        if Vehicle ~= 0 then
             dr = 100
-         RemovePedHelmet(playerPed, true)
+         RemovePedHelmet(Ped, true)
         end
       Citizen.Wait(dr)
     end
