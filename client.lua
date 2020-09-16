@@ -2,7 +2,7 @@ Citizen.CreateThread( function()
     while true do
         local dr = 1000
         local Ped = PlayerPedId()
-        local deniz = GetEntityModel(GetVehiclePedIsIn(PlayerPedId(), false))
+        local deniz = GetEntityModel(GetVehiclePedIsIn(Ped, false))
 
         if IsThisModelABicycle(deniz) or IsThisModelABike(deniz) or IsThisModelAQuadbike(deniz) or IsThisModelAnAmphibiousQuadbike(deniz) then
             dr = 100
