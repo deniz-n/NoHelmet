@@ -4,7 +4,7 @@ Citizen.CreateThread( function()
         local Ped = PlayerPedId()
         local deniz = GetEntityModel(GetVehiclePedIsIn(PlayerPedId(), false))
 
-        if IsThisModelABicycle(deniz) and IsThisModelABike(deniz) and IsThisModelAQuadbike(deniz) and IsThisModelAnAmphibiousQuadbike(deniz) then
+        if IsThisModelABicycle(deniz) or IsThisModelABike(deniz) or IsThisModelAQuadbike(deniz) or IsThisModelAnAmphibiousQuadbike(deniz) then
             dr = 100
          RemovePedHelmet(Ped, true)
         end
